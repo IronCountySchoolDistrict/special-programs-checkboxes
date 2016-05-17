@@ -9,18 +9,19 @@
 
 <!-- start template -->
 <script type="text/template" id="spcheckbox">
-  <form>
-    <div id="box-adjust" style="margin-left:20px;">
-      <input type="checkbox" name="[Students.S_UT_STU_X]special_ed_indicator" value="1">
-        <span class="check-format" style="margin-right:8px;">
+<form>
+<div id="box-adjust" style="margin:0 20px;">
+  <div style="margin:8px 0;font-size:18px;"><strong>Current Programs:</strong></div>
+  <div style="margin-bottom:15px;">
+    <div style="box-sizing:border-box; width:100%; border: 1px solid #ccc; background: #f2f2f2; float: left;margin-bottom:20px;">
+    <input style="margin: 10px;" type="checkbox" name="[Students.S_UT_STU_X]special_ed_indicator" value="1">
+        <span class="check-format">
           Special Ed
         </span>
-      <!-- <input type="checkbox" name="" value="1">
-        <span class="check-format">
-          ELL
-        </span> -->
     </div>
-  </form>
+  </div>
+</div>
+</form>
 </script>
 <!-- end template -->
 
