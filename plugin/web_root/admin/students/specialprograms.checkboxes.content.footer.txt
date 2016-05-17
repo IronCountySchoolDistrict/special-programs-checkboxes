@@ -1,0 +1,32 @@
+<!-- start PS DATA -->
+  <script>
+    if (!psData) {
+      var psData = {};
+    }
+    psData.studentDcid = "~(studentfrn)".slice(3);
+  </script>
+<!-- end PS DATA -->
+
+<!-- start template -->
+<script type="text/template" id="spcheckbox">
+<form>
+<div id="box-adjust" style="margin:0 20px;">
+  <div style="margin:8px 0;font-size:18px;"><strong>Current Programs:</strong></div>
+  <div style="margin-bottom:15px;">
+    <div style="box-sizing:border-box; width:100%; border: 1px solid #ccc; background: #f2f2f2; float: left;margin-bottom:20px;">
+    <input style="margin: 10px;" type="checkbox" name="[Students.S_UT_STU_X]special_ed_indicator" value="1">
+        <span class="check-format">
+          Special Ed
+        </span>
+    </div>
+  </div>
+</div>
+</form>
+</script>
+<!-- end template -->
+
+<!-- start CSS -->
+<link rel="stylesheet" href="/scripts/special-programs-checkboxes/css/special-checkboxes.css" type="text/css" media="print">
+<!-- end CSS -->
+
+<script type="text/javascript" src="/scripts/special-programs-checkboxes/js/spcheckbox.js"></script>
