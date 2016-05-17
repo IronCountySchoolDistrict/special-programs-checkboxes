@@ -1,7 +1,7 @@
-#spcheckbox .box {
+.box {
   margin-left: 20px;
 }
 
-#spcheckbox .box .check-format {
+.box .check-format {
   margin-right: 8px;
 }
