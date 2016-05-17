@@ -3,7 +3,7 @@
     if (!psData) {
       var psData = {};
     }
-    psData.studentDcid = "~(studentfrn)".splice(3);
+    psData.studentDcid = "~(studentfrn)".slice(3);
   </script>
 <!-- end PS DATA -->
 

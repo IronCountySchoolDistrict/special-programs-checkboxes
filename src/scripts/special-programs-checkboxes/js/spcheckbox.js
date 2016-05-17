@@ -23,27 +23,33 @@
 
   var state_student_record = get_state_student_record();
 
-  $("#sped").on("change", function(){
-    var value = $("#sped").val();
-    var record = {
-       "tables":{
-      	  "S_UT_STU_X":{
-      		 "studentsdcid": psData.studentDcid,
-      		 "special_ed_indicator": value
-      	  }
-       }
-    }
-    if(!state_student_record){
-      $.post("/ws/schema/table/S_UT_STU_X", record, function(data){
-        console.log(data);
-      }, "json");
-    }else {
-      record.id = state_student_record;
-      record.name = "S_UT_STU_X";
-      $.put("/ws/schema/table/S_UT_STU_X/"+psData.studentDcid, record, function(data){
-        console.log(data);
-      }, "json");
-    }
+  $(document).ready( function(){
+    //inserts html template before box-round element
+    $(".box-round").before($("#spcheckbox").html());
 
-  })
+    $("#sped").on("change", function(){
+      var value = $("#sped").val();
+      var record = {
+         "tables":{
+        	  "S_UT_STU_X":{
+        		 "studentsdcid": psData.studentDcid,
+        		 "special_ed_indicator": value
+        	  }
+         }
+      }
+      if(!state_student_record){
+        $.post("/ws/schema/table/S_UT_STU_X", record, function(data){
+          console.log(data);
+        }, "json");
+      }else {
+        record.id = state_student_record;
+        record.name = "S_UT_STU_X";
+        $.put("/ws/schema/table/S_UT_STU_X/"+psData.studentDcid, record, function(data){
+          console.log(data);
+        }, "json");
+      }
+
+    })
+  });
+
 })($j);
