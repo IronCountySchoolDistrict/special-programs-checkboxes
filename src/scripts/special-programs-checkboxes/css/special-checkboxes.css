@@ -1,7 +1,7 @@
-form .box {
-  margin-left: 20px;
+form #box-adjust {
+  margin-left: 20px!important;
 }
 
-form .box .check-format {
-  margin-right: 8px;
+form #box-adjust .check-format {
+  margin-right: 8px!important;
 }

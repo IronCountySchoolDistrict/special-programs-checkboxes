@@ -7,23 +7,25 @@
   </script>
 <!-- end PS DATA -->
 
-<!-- start CSS -->
-<link rel="stylesheet" href="/scripts/special-programs-checkboxes/css/special-checkboxes.css" type="text/css" media="print">
-<!-- end CSS -->
-
 <!-- start template -->
 <script type="text/template" id="spcheckbox">
-  <form class="box">
-    <input id="sped" type="checkbox" name="[Students.S_UT_STU_X]special_ed_indicator" value="1">
-      <span class="check-format">
-        Special Ed
-      </span>
-    <!-- <input type="checkbox" name="" value="1">
-      <span class="check-format">
-        ELL
-      </span> -->
+  <form>
+    <div id="box-adjust" style="margin-left:20px;">
+      <input type="checkbox" name="[Students.S_UT_STU_X]special_ed_indicator" value="1">
+        <span class="check-format" style="margin-right:8px;">
+          Special Ed
+        </span>
+      <!-- <input type="checkbox" name="" value="1">
+        <span class="check-format">
+          ELL
+        </span> -->
+    </div>
   </form>
 </script>
 <!-- end template -->
+
+<!-- start CSS -->
+<link rel="stylesheet" href="/scripts/special-programs-checkboxes/css/special-checkboxes.css" type="text/css" media="print">
+<!-- end CSS -->
 
 <script type="text/javascript" src="/scripts/special-programs-checkboxes/js/spcheckbox.js"></script>
