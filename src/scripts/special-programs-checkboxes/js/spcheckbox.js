@@ -37,7 +37,7 @@
         	  }
          }
       }
-      if(!state_student_record){
+      if(!_.property('tables.S_UT_STU_X.special_ed_indicator')(state_student_record)){
         $.post("/ws/schema/table/S_UT_STU_X", record, function(data){
           console.log(data);
         }, "json");
