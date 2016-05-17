@@ -30,6 +30,8 @@
     $("#sped").on("change", function(){
       var value = $("#sped").val();
       var record = {
+        "id": state_student_record.id,
+        "name": "S_UT_STU_X",
          "tables":{
         	  "S_UT_STU_X":{
         		 "studentsdcid": psData.studentDcid,
@@ -37,17 +39,11 @@
         	  }
          }
       }
-      if(!_.property('tables.S_UT_STU_X.special_ed_indicator')(state_student_record)){
-        $.post("/ws/schema/table/S_UT_STU_X", record, function(data){
-          console.log(data);
-        }, "json");
-      }else {
-        record.id = state_student_record;
-        record.name = "S_UT_STU_X";
-        $.put("/ws/schema/table/S_UT_STU_X/"+psData.studentDcid, record, function(data){
-          console.log(data);
-        }, "json");
-      }
+      console.log(record);
+
+      $.put("/ws/schema/table/S_UT_STU_X/"+psData.studentDcid, record, function(data){
+        console.log(data);
+      }, "json");
 
     })
   });

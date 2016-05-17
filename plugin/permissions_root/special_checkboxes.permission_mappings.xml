@@ -1,7 +1,6 @@
 <permission_mappings>
   <permission name='/admin/home.html'>
     <implies allow="get">/ws/schema/table/S_UT_STU_X/#</implies>
-    <implies allow="post">/ws/schema/table/S_UT_STU_X</implies>
     <implies allow="put">/ws/schema/table/S_UT_STU_X/#</implies>
   </permission>
 </permission_mappings>
