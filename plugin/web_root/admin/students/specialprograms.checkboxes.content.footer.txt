@@ -11,4 +11,14 @@
 <link rel="stylesheet" href="/scripts/special-programs-checkboxes/css/special-checkboxes.css" type="text/css" media="print">
 <!-- end CSS -->
 
-<script type="text/javascript" src="/scripts/special-programs-checkboxes/js/spcheckbox.js"></script>
+<script>
+  require.config({
+    paths: {
+      'spcheckbox': '/scripts/special-programs-checkboxes/js/spcheckbox'
+    }
+  });
+
+  require(['spcheckbox'], (spcheckbox) => {
+    spcheckbox.default();
+  });
+</script>

@@ -1,0 +1,11 @@
+<script>
+  require.config({
+    paths: {
+      fixProgramChange: '/scripts/special-programs-checkboxes/js/fix-program-change'
+    }
+  });
+
+  require(['fixProgramChange'], (fixProgramChange) => {
+    fixProgramChange.default();
+  });
+</script>
