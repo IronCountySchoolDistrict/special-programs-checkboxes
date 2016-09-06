@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="/scripts/special-programs-checkboxes/css/special-checkboxes.css" type="text/css" media="print">
 <!-- end CSS -->
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/1.0.0/fetch.js"></script>
 <script>
   require.config({
     paths: {
