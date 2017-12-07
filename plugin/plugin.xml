@@ -3,7 +3,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   description="Allows for admin to check a student to be searchable by special programs"
   name="Special Program Checkboxes"
-  version="0.1"
+  version="0.1.0"
   xsi:schemaLocation="http://plugin.powerschool.pearson.com plugin.xsd">
 
   <access_request>
