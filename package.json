@@ -1,26 +1,25 @@
 {
-  "name": "iep-printing",
+  "name": "special-programs-checkboxes",
   "version": "1.0.0",
-  "description": "iep-printing is a custom plugin for PowerSchool that works with [iep-printing-php](https://github.com/IronCountySchoolDistrict/iep-printing-php) to bring an IEP solution to PowerSchool. Track IEPs for students and Print [FormBuilder](http://www.accelaschool.com/formbuilder) forms.",
-  "main": "index.js",
+  "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/IronCountySchoolDistrict/iep-printing.git"
+    "url": "git+https://github.com/IronCountySchoolDistrict/special-programs-checkboxes.git"
   },
   "author": "Iron County School District",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/IronCountySchoolDistrict/iep-printing/issues"
+    "url": "https://github.com/IronCountySchoolDistrict/special-programs-checkboxes/issues"
   },
-  "homepage": "https://github.com/IronCountySchoolDistrict/iep-printing#readme",
+  "homepage": "https://github.com/IronCountySchoolDistrict/special-programs-checkboxes#readme",
   "devDependencies": {
-    "babel-cli": "^6.18.0",
-    "babel-preset-es2015": "^6.18.0",
-    "babel-register": "^6.18.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
     "gulp": "^3.9.1",
-    "gulp-ps-tasks": "^0.6.2"
+    "gulp-ps-tasks": "^0.6.3"
   }
 }
