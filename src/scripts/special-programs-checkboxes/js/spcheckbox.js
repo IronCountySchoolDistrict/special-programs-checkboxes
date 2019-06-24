@@ -1,4 +1,6 @@
 import $ from 'jquery';
+import template from '../html/spcheckboxes.html'
+import '../css/special-checkboxes.css'
 
 // Get State Student Record
 var get_ssr = fetch(`/ws/schema/table/S_UT_STU_X/${psData.studentDcid}?projection=*`, {
@@ -17,8 +19,8 @@ var get_ell = fetch(`/ws/schema/table/U_DEF_EXT_STUDENTS/${psData.studentDcid}?p
   }
 }).then(response => response.json());
 // Get HTML page fragment to be loaded
-var page_fragment = fetch('/scripts/special-programs-checkboxes/html/spcheckboxes.html')
-  .then(response => response.text());
+// var page_fragment = fetch('/scripts/special-programs-checkboxes/html/spcheckboxes.html')
+//   .then(response => response.text());
 
 function put(loc, data) {
   fetch(loc, {
@@ -32,14 +34,13 @@ function put(loc, data) {
   });
 }
 
-export default function() {
   $(() => {
     // Sets the location of program tables
     var sped_loc = "/ws/schema/table/S_UT_STU_X/" + psData.studentDcid;
     var ell_loc = "/ws/schema/table/U_DEF_EXT_STUDENTS/" + psData.studentDcid;
 
     // Resolve all the Fetch var
-    Promise.all([get_ssr, get_ell, page_fragment])
+    Promise.all([get_ssr, get_ell, template])
       .then(function([state_student_record, ell, body]) {
         // Sets the current value of the program indicator
         var sped_check = state_student_record.tables.s_ut_stu_x.special_ed_indicator;
@@ -84,4 +85,3 @@ export default function() {
         })
       })
   });
-}
