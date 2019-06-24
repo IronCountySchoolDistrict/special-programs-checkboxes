@@ -12,14 +12,4 @@
 <!-- end CSS -->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/1.0.0/fetch.js"></script>
-<script>
-  require.config({
-    paths: {
-      'spcheckbox': '/scripts/special-programs-checkboxes/js/spcheckbox'
-    }
-  });
-
-  require(['spcheckbox'], (spcheckbox) => {
-    spcheckbox.default();
-  });
-</script>
+<script src="/scripts/special-programs-checkboxes/js/spcheckbox.js"></script>

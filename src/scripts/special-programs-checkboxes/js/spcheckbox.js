@@ -34,7 +34,6 @@ function put(loc, data) {
   });
 }
 
-export default function () {
   $(() => {
     // Sets the location of program tables
     var sped_loc = "/ws/schema/table/S_UT_STU_X/" + psData.studentDcid;
@@ -86,4 +85,3 @@ export default function () {
         })
       })
   });
-}
