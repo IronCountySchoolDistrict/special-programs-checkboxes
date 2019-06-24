@@ -1,9 +1,10 @@
 import $ from 'jquery';
 
-export default function() {
+const fixbox = () => {
   $(() => {
     const programSelect = $('select[special="lists.specprog"]');
     programSelect.unbind('change');
     programSelect.on('change', programIDOnChange);
   });
 }
+export default fixbox
