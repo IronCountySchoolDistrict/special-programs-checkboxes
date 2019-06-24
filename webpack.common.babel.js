@@ -42,9 +42,16 @@ const config = {
             {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
-                loader: 'babel-loader',
-                query: {
-                    presets: ['@babel/preset-env']
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env'],
+                        "plugins": [
+                            "@babel/plugin-transform-modules-amd",
+                            "@babel/plugin-transform-regenerator",
+                            "@babel/plugin-transform-runtime"
+                        ]
+                    }
                 }
             } 
         ]
